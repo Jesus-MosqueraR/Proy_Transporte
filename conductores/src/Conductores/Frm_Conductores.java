@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 public class Frm_Conductores extends javax.swing.JFrame {
 
     String [][] conductor = new String [5][5];
-    int fila=0;
+    int fila=0;,
     
     public Frm_Conductores() {
         initComponents();
@@ -17,7 +17,7 @@ public class Frm_Conductores extends javax.swing.JFrame {
     {
         if(fila>4)
         {
-            JOptionPane.showMessageDialog(null,"YA no hay cupo we");
+            JOptionPane.showMessageDialog(null,"No hay cupos en el momento we");
         }
         else
         {
@@ -53,7 +53,7 @@ public class Frm_Conductores extends javax.swing.JFrame {
         }
         if(sw==0)
         {
-            JOptionPane.showMessageDialog(null,"EL chofe"+"    "+ TxtCodigo.getText()+"    "+ "no esta en el registro we");
+            JOptionPane.showMessageDialog(null,"El Conductor"+"    "+ TxtCodigo.getText()+"    "+ "No existe en los registros we");
         }
 
     }
